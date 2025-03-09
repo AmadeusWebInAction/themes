@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	##seo##
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@400;600&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="##theme##style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="##theme##css/font-icons.css">
+	<link rel="stylesheet" href="##theme##demos/real-estate/css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="##theme##css/components/bs-select.css">
+	<link rel="stylesheet" href="##theme##css/components/bs-switches.css">
+	<link rel="stylesheet" href="##theme##css/components/ion.rangeslider.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="##theme##demos/real-estate/real-estate.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="##theme##css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>##title##</title>
+	##icon##
+</head>
+
+<body class="stretched side-push-panel ##body-classes##">
+
+	<div id="side-panel">
+		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="bi-x-lg"></i></a></div>
+
+		<div class="side-panel-wrap">
+			<div class="widget">
+
+				<h4 class="fw-normal">Login with Social Profiles</h4>
+
+				<a href="#" class="button button-rounded fw-normal w-100 text-center ms-0 bg-facebook">Facebook</a>
+				<a href="#" class="button button-rounded fw-normal w-100 text-center ms-0 bg-google">Google</a>
+
+				<div class="line"></div>
+
+				<h4 class="fw-normal">Existing Account?</h4>
+
+				<form id="login-form" name="row mb-0" class="mb-0" action="#" method="post">
+
+					<div class="col-12 form-group">
+						<label for="login-form-username" class="fw-normal">Username:</label>
+						<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control">
+					</div>
+
+					<div class="col-12 form-group">
+						<label for="login-form-password" class="fw-normal">Password:</label>
+						<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control">
+					</div>
+
+					<div class="col-12 form-group">
+						<div class="d-flex justify-content-between">
+							<button class="button button-rounded fw-normal m-0" id="login-form-submit" name="login-form-submit" value="login">Login</button>
+							<a href="#">Forgot Password?</a>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar" class="transparent-topbar border-bottom-0">
+			<div class="container">
+
+				<div class="row justify-content-between">
+					%site-top-bar-snippet%
+				</div>
+
+			</div>
+		</div><!-- #top-bar end -->
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header dark header-size-md" data-sticky-shrink="false">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							##logo##
+						</div><!-- #logo end -->
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu with-arrows">
+
+							<ul class="menu-container">
+								##menu##
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		##optional-slider##
+
+		<div class="tabs advanced-real-estate-tabs pt-5">
+
+			<div class="container">
+				<ul class="nav canvas-tabs tabs nav-tabs" style="--bs-nav-tabs-border-width: 0px">
+					<li class="nav-item"><a class="nav-link active" href="#tab-properties" data-scrollto="#tab-properties" data-offset="133">Search Properties</a></li>
+				</ul>
+			</div>
+
+			<div class="tab-container bg-contrast-200">
+				<div class="container">
+					<div class="tab-content" id="tab-properties">
+						<form action="#" method="post" class="mb-0">
+							<div class="row g-4">
+								<div class="col-lg-2 col-md-12">
+									<label class="d-block">Type</label>
+									<input class="bt-switch" type="checkbox" checked data-on-text="Buy" data-off-text="Rent" data-on-color="themecolor" data-off-color="themecolor">
+								</div>
+								<div class="col-lg-4 col-md-6 col-12">
+									<label>Choose Locations</label>
+									<select class="selectpicker w-100" multiple data-live-search="true" data-size="6">
+										%theme-locations-snippet%
+									</select>
+								</div>
+								<div class="col-lg-4 col-md-6 col-12">
+									<label style="margin-bottom: 20px !important;">Price Range</label>
+									<input class="price-range-slider">
+								</div>
+								<div class="col-lg-4 offset-lg-1 col-md-6 col-12">
+									<label style="margin-bottom: 20px !important;">Property Area</label>
+									<input class="area-range-slider">
+								</div>
+								<div class="offset-lg-1 col-lg-2 col-md-12">
+									<button class="button button-3d button-rounded w-100 m-0" style="margin-top: 35px !important;">Search</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				<div class="container">
+
+					<div class="row col-mb-50">
+						%site-above-featured-snippet%
+					</div>
+
+					<div class="line"></div>
+
+					##content##
+				</div>
+
+				<div class="container row align-items-stretch mx-0 mt-5 mb-6">
+					%site-contact-snippet%
+				</div>
+
+				<div class="container">
+
+					<div class="row col-mb-50">
+						<div class="col-md-8">
+
+							<div class="mb-0">
+								%site-credentials-snippet%
+							</div>
+
+						</div>
+
+						<div class="col-md-4">
+
+							<h4 class="text-center">Top Builders</h4>
+
+							<ul class="clients-grid grid-border row row-cols-2 mb-0">
+								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/1.png" alt="Clients"></a></li>
+								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/2.png" alt="Clients"></a></li>
+								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/3.png" alt="Clients"></a></li>
+								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/4.png" alt="Clients"></a></li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container">
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap">
+
+					<div class="row col-mb-50">
+						<div class="col-lg-3 order-last order-lg-first">
+
+							<div class="widget">
+
+								##footer-logo##
+
+								<div class="line" style="margin: 30px 0;"></div>
+
+								<p class="ls-1 fw-light" style="opacity: 0.6; font-size: 13px;">##copyright##</p>
+
+								<div class="social">##social-icons##</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-9">
+
+							<div id="network-in-footer" class="network-links row col-mb-50">
+								##footer-widgets##
+							</div>
+
+						</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="##theme##js/plugins.min.js"></script>
+	<script src="##theme##js/functions.bundle.js"></script>
+
+	<!-- Bootstrap Select Plugin -->
+	<script src="##theme##js/components/bs-select.js"></script>
+
+	<!-- Bootstrap Switch Plugin -->
+	<script src="##theme##js/components/bs-switches.js"></script>
+
+	<!-- Range Slider Plugin -->
+	<script src="##theme##js/components/rangeslider.min.js"></script>
+
+	<script>
+		jQuery(document).ready(function(){
+			jQuery(".price-range-slider").ionRangeSlider({
+				type: "double",
+				prefix: "$",
+				min: 200,
+				max: 10000,
+				max_postfix: "+"
+			});
+
+			jQuery(".area-range-slider").ionRangeSlider({
+				type: "double",
+				min: 50,
+				max: 20000,
+				from: 50,
+				to: 20000,
+				postfix: " sqm.",
+				max_postfix: "+"
+			});
+
+			jQuery(".bt-switch").bootstrapSwitch();
+		});
+	</script>
+
+</body>
+</html>
