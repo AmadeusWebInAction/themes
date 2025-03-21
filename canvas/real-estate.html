@@ -35,61 +35,11 @@
 
 <body class="stretched side-push-panel ##body-classes##">
 
-	<div id="side-panel">
-		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="bi-x-lg"></i></a></div>
-
-		<div class="side-panel-wrap">
-			<div class="widget">
-
-				<h4 class="fw-normal">Login with Social Profiles</h4>
-
-				<a href="#" class="button button-rounded fw-normal w-100 text-center ms-0 bg-facebook">Facebook</a>
-				<a href="#" class="button button-rounded fw-normal w-100 text-center ms-0 bg-google">Google</a>
-
-				<div class="line"></div>
-
-				<h4 class="fw-normal">Existing Account?</h4>
-
-				<form id="login-form" name="row mb-0" class="mb-0" action="#" method="post">
-
-					<div class="col-12 form-group">
-						<label for="login-form-username" class="fw-normal">Username:</label>
-						<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control">
-					</div>
-
-					<div class="col-12 form-group">
-						<label for="login-form-password" class="fw-normal">Password:</label>
-						<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control">
-					</div>
-
-					<div class="col-12 form-group">
-						<div class="d-flex justify-content-between">
-							<button class="button button-rounded fw-normal m-0" id="login-form-submit" name="login-form-submit" value="login">Login</button>
-							<a href="#">Forgot Password?</a>
-						</div>
-					</div>
-
-				</form>
-
-			</div>
-		</div>
-	</div>
-
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper">
 
-		<!-- Top Bar
-		============================================= -->
-		<div id="top-bar" class="transparent-topbar border-bottom-0">
-			<div class="container">
-
-				<div class="row justify-content-between">
-					%site-top-bar-snippet%
-				</div>
-
-			</div>
-		</div><!-- #top-bar end -->
+		%site-top-bar-snippet%
 
 		<!-- Header
 		============================================= -->
@@ -124,93 +74,11 @@
 
 		##optional-slider##
 
-		<div class="tabs advanced-real-estate-tabs pt-5">
-
-			<div class="container">
-				<ul class="nav canvas-tabs tabs nav-tabs" style="--bs-nav-tabs-border-width: 0px">
-					<li class="nav-item"><a class="nav-link active" href="#tab-properties" data-scrollto="#tab-properties" data-offset="133">Search Properties</a></li>
-				</ul>
-			</div>
-
-			<div class="tab-container bg-contrast-200">
-				<div class="container">
-					<div class="tab-content" id="tab-properties">
-						<form action="#" method="post" class="mb-0">
-							<div class="row g-4">
-								<div class="col-lg-2 col-md-12">
-									<label class="d-block">Type</label>
-									<input class="bt-switch" type="checkbox" checked data-on-text="Buy" data-off-text="Rent" data-on-color="themecolor" data-off-color="themecolor">
-								</div>
-								<div class="col-lg-4 col-md-6 col-12">
-									<label>Choose Locations</label>
-									<select class="selectpicker w-100" multiple data-live-search="true" data-size="6">
-										%theme-locations-snippet%
-									</select>
-								</div>
-								<div class="col-lg-4 col-md-6 col-12">
-									<label style="margin-bottom: 20px !important;">Price Range</label>
-									<input class="price-range-slider">
-								</div>
-								<div class="col-lg-4 offset-lg-1 col-md-6 col-12">
-									<label style="margin-bottom: 20px !important;">Property Area</label>
-									<input class="area-range-slider">
-								</div>
-								<div class="offset-lg-1 col-lg-2 col-md-12">
-									<button class="button button-3d button-rounded w-100 m-0" style="margin-top: 35px !important;">Search</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
 		<!-- Content
 		============================================= -->
 		<section id="content">
 			<div class="content-wrap">
-				<div class="container">
-
-					<div class="row col-mb-50">
-						%site-above-featured-snippet%
-					</div>
-
-					<div class="line"></div>
-
-					##content##
-				</div>
-
-				<div class="container row align-items-stretch mx-0 mt-5 mb-6">
-					%site-contact-snippet%
-				</div>
-
-				<div class="container">
-
-					<div class="row col-mb-50">
-						<div class="col-md-8">
-
-							<div class="mb-0">
-								%site-credentials-snippet%
-							</div>
-
-						</div>
-
-						<div class="col-md-4">
-
-							<h4 class="text-center">Top Builders</h4>
-
-							<ul class="clients-grid grid-border row row-cols-2 mb-0">
-								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/1.png" alt="Clients"></a></li>
-								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/2.png" alt="Clients"></a></li>
-								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/3.png" alt="Clients"></a></li>
-								<li class="col-3 col-md-6 col-padding" style="padding: 20px;"><a href="#" class="op-09"><img src="https://canvastemplate.com/demos/real-estate/images/builders/4.png" alt="Clients"></a></li>
-							</ul>
-
-						</div>
-					</div>
-
-				</div>
+				##content##
 			</div>
 		</section><!-- #content end -->
 
@@ -218,37 +86,7 @@
 		============================================= -->
 		<footer id="footer" class="dark">
 			<div class="container">
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap">
-
-					<div class="row col-mb-50">
-						<div class="col-lg-3 order-last order-lg-first">
-
-							<div class="widget">
-
-								##footer-logo##
-
-								<div class="line" style="margin: 30px 0;"></div>
-
-								##copyright##
-
-								<div class="social">##social-icons##</div>
-
-							</div>
-
-						</div>
-
-						<div class="col-lg-9">
-
-							<div id="network-in-footer" class="network-links row col-mb-50">
-								##footer-widgets##
-							</div>
-
-						</div>
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
+				##footer-widgets##
 			</div>
 		</footer><!-- #footer end -->
 
