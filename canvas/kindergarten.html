@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	##seo##
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="##theme##style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="##theme##css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="##theme##css/swiper.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="##theme##demos/kindergarten/kindergarten.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="##theme##css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	##head-includes##
+</head>
+
+<body class="stretched ##body-classes##" data-menu-breakpoint="1200">
+
+    <!--TODO: ##optional-modal##-->
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row justify-content-xl-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-xl-0 col-xl-3">
+							##logo##
+						</div><!-- #logo end -->
+
+						<div class="header-misc col-xl-3 justify-content-end">
+							<!-- WhatsApp Icon
+							============================================= -->
+							<a href="%whatsapp%%enquiry%" target="_blank" class="Whatsapp-icon d-flex align-items-center me-2 text-dark h-text-color font-primary fw-bold h5 mb-0">
+								<i class="fa-brands fa-whatsapp me-2"></i> <span class="nocolor d-none d-md-block">%whatsapp-number%</span>
+							</a>
+						</div>
+
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<nav class="primary-menu">
+                            ##menu##
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		##optional-slider##
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap">
+				##content##
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="border-0" style="background-image: linear-gradient(to top, #61BFDB, #E0F2C2, #FFF);">
+
+			<div class="position-absolute top-0 start-0 w-100 h-100" style="background: transparent url('https://canvastemplate.com/demos/kindergarten/images/footer.png') center bottom / cover;"></div>
+
+			<div class="container" style="padding-bottom: 380px;">
+				##footer-widgets##
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="bi-hand-index fs-5 rounded-circle"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="##theme##js/plugins.min.js"></script>
+	<script src="##theme##js/functions.bundle.js"></script>
+
+	<!-- Include Date Range Picker -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+	<script>
+		let carousels = jQuery('#kindergarten-carousel-img, #kindergarten-carousel-text');
+
+		jQuery('.carousel-control-prev').on( 'click', function(){
+			carousels.carousel('prev');
+		});
+
+		jQuery('.carousel-control-next').on( 'click', function(){
+			carousels.carousel('next');
+		});
+
+		jQuery(function() {
+			jQuery(".component-flatpickr").flatpickr({
+				enableTime: true,
+				dateFormat: "d/m/yy - H:i",
+			});
+		});
+	</script>
+
+</body>
+</html>
