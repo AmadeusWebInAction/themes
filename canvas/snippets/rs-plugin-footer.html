@@ -1,0 +1,153 @@
+<!--https://canvastemplate.com/rs-demo-premium-food-carousel.html-->
+<!--TODO: add this to setup process:
+	https://themes.amadeusweb.com/canvas/include/rs-plugin/rs-plugin.zip-->
+
+<!-- Plugins/Components CSS -->
+<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+<link rel="stylesheet" href="##theme##include/rs-plugin/css/settings.css" media="screen">
+<link rel="stylesheet" href="##theme##include/rs-plugin/css/layers.css">
+<link rel="stylesheet" href="##theme##include/rs-plugin/css/navigation.css">
+
+<style>
+	.revo-slider-emphasis-text {
+		font-size: 64px;
+		font-weight: 700;
+		letter-spacing: -1px;
+		font-family: 'Poppins', sans-serif;
+		padding: 15px 20px;
+		border-top: 2px solid #FFF;
+		border-bottom: 2px solid #FFF;
+	}
+
+	.revo-slider-desc-text {
+		font-size: 20px;
+		font-family: 'Lato', sans-serif;
+		width: 650px;
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	.revo-slider-caps-text {
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: 3px;
+		font-family: 'Poppins', sans-serif;
+	}
+	.tp-video-play-button { display: none !important; }
+
+	.tp-caption { white-space: nowrap; }
+</style>
+
+<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+<script src="##theme##include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="##theme##include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="##theme##include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+<script>
+	var tpj=jQuery;
+	var revapi108;
+
+	tpj(document).ready(function() {
+		if(tpj("#rev_slider_108_1").revolution == undefined){
+			revslider_showDoubleJqueryError("#rev_slider_108_1");
+		}else{
+			revapi108 = tpj("#rev_slider_108_1").show().revolution({
+				sliderType:"carousel",
+				jsFileLocation:"include/rs-plugin/js/",
+				sliderLayout:"fullwidth",
+				dottedOverlay:"none",
+				delay:9000,
+				navigation: {
+					keyboardNavigation:"off",
+					keyboard_direction: "horizontal",
+					mouseScrollNavigation:"off",
+					onHoverStop:"off",
+					arrows: {
+						style:"metis",
+						enable:true,
+						hide_onmobile:true,
+						hide_under:768,
+						hide_onleave:false,
+						tmp:'',
+						left: {
+							h_align:"left",
+							v_align:"center",
+							h_offset:0,
+							v_offset:0
+						},
+						right: {
+							h_align:"right",
+							v_align:"center",
+							h_offset:0,
+							v_offset:0
+						}
+					},
+					thumbnails: {
+						style:"erinyen",
+						enable:true,
+						width:150,
+						height:100,
+						min_width:150,
+						wrapper_padding:20,
+						wrapper_color:"#000000",
+						wrapper_opacity:"0.05",
+						tmp:'<span class="tp-thumb-over"></span><span class="tp-thumb-image"></span><span class="tp-thumb-title">{{title}}</span><span class="tp-thumb-more"></span>',
+						visibleAmount:9,
+						hide_onmobile:false,
+						hide_onleave:false,
+						direction:"horizontal",
+						span:true,
+						position:"outer-bottom",
+						space:10,
+						h_align:"center",
+						v_align:"bottom",
+						h_offset:0,
+						v_offset:0
+					}
+				},
+				carousel: {
+					maxRotation: 65,
+					vary_rotation: "on",
+					minScale: 55,
+					vary_scale: "off",
+					horizontal_align: "center",
+					vertical_align: "center",
+					fadeout: "on",
+					vary_fade: "on",
+					maxVisibleItems: 5,
+					infinity: "on",
+					space: -150,
+					stretch: "off"
+				},
+				gridwidth:600,
+				gridheight:600,
+				lazyType:"none",
+				shadow:0,
+				spinner:"off",
+				stopLoop:"on",
+				stopAfterLoops:0,
+				stopAtSlide:1,
+				shuffle:"off",
+				autoHeight:"off",
+				disableProgressBar:"on",
+				hideThumbsOnMobile:"off",
+				hideSliderAtLimit:0,
+				hideCaptionAtLimit:0,
+				hideAllCaptionAtLilmit:0,
+				debugMode:false,
+				fallbacks: {
+					simplifyAll:"off",
+					nextSlideOnWindowFocus:"off",
+					disableFocusListener:false,
+				}
+			});
+		}
+	});	/*ready*/
+</script>
+
+<!--//end of rs-demo-premium-food-carousel.html-->
