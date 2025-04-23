@@ -19,7 +19,6 @@
 
 	.floating-btn-wrap {
 		--cnvs-floating-btn-size: 4rem;
-		--cnvs-floating-btn-pos-right: var(--cnvs-floating-btn-size);
 		--cnvs-floating-btn-pos-bottom: var(--cnvs-floating-btn-size);
 		--cnvs-floating-btn-transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 		--cnvs-floating-btn-bg-color: var(--cnvs-themecolor);
@@ -32,7 +31,9 @@
 
 
 		position: fixed;
-		right: var(--cnvs-floating-btn-pos-right);
+		right: calc(var(--cnvs-floating-btn-size, var(--cnvs-floating-btn-size))
+			+ var(--cnvs-gotoTop-position-boxed-right, 30px)
+			+ var(--cnvs-gotoTop-size, 2.5rem) - 15px);
 		bottom: var(--cnvs-floating-btn-pos-bottom);
 		z-index: 199;
 	}
