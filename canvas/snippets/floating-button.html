@@ -2,7 +2,7 @@
 
 	#wrapper::after {
 		content: "";
-		opacity: 0;
+		display: none;
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -13,7 +13,7 @@
 	}
 
 	.floating-btn-open #wrapper::after {
-		opacity: 1;
+		display: block;
 		background-color: rgba(0, 0, 0, 0.75);
 	}
 
@@ -31,7 +31,7 @@
 
 
 		position: fixed;
-		right: calc(var(--cnvs-floating-btn-size, var(--cnvs-floating-btn-size))
+		right: calc(var(--cnvs-floating-btn-pos-right, var(--cnvs-floating-btn-size))
 			+ var(--cnvs-gotoTop-position-boxed-right, 30px)
 			+ var(--cnvs-gotoTop-size, 2.5rem) - 15px);
 		bottom: var(--cnvs-floating-btn-pos-bottom);
